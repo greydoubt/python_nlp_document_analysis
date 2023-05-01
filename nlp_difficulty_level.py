@@ -47,7 +47,7 @@ def advanced_classification(text):
 	# preprocess the text
 	text = preprocess_text(text)
 	# check if the text contains profanity or triggering subjects
-	if "profanity_word_1" in text or "profanity_word_2" in text or "trigger_word_1" in text or "trigger_word_2" in 	text:
+	if "profanity_word_1" in text or "profanity_word_2" in text or "trigger_word_1" in text or "trigger_word_2" in text:
 			# classify the text as advanced
 		return "Advanced (college level)"
 	else:
