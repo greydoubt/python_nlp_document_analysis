@@ -40,7 +40,7 @@ def classify_text(text):
 	elif score > 30:
 		return "Difficult (11th-12th grade level)"
 	else:
-	return "Very difficult (college level)"
+		return "Very difficult (college level)"
 
 #define a function to classify text with profanity and triggering subjects as more advanced
 def advanced_classification(text):
@@ -48,7 +48,7 @@ def advanced_classification(text):
 	text = preprocess_text(text)
 	# check if the text contains profanity or triggering subjects
 		if "profanity_word_1" in text or "profanity_word_2" in text or "trigger_word_1" in text or "trigger_word_2" in 	text:
-		# classify the text as advanced
+			# classify the text as advanced
 			return "Advanced (college level)"
 		else:
 	# classify the text using the standard classification function
